@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Designs in Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div
+        class="mx-3 2xl:hidden bg-rose-500 text-white sm:bg-green-500 md:bg-amber-500 lg:bg-pink-500 xl:bg-cyan-500 2xl:bg-purple-400">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit consequatur optio eveniet illo
+        delectus nisi debitis accusamus? Dolores, laboriosam? Deserunt facere quisquam, commodi recusandae mollitia
+        veritatis, laboriosam, non necessitatibus consectetur vitae delectus maiores dolor eaque! Velit iusto, saepe
+        dignissimos ducimus maiores dolorum harum asperiores.
+    </div>
+</body>
+
+</html>
+
+
+<!-- BreakPoints ->
+sm 640px @media (min-width: 640px) { ... }
+md 768px @media (min-width: 768px) { ... }
+lg 1024px @media (min-width: 1024px) { ... }
+xl 1280px @media (min-width: 1280px) { ... }
+2xl 1536px @media (min-width: 1536px) { ... } -->
+
+<!-- Modifier Media query
+max-sm @media not all and (min-width: 640px) { ... }
+max-md @media not all and (min-width: 768px) { ... }
+max-lg @media not all and (min-width: 1024px) { ... }
+max-xl @media not all and (min-width: 1280px) { ... }
+max-2xl @media not all and (min-width: 1536px) { ... } -->
+
+<!-- You can completely customize your breakpoints in your tailwind.config.js file:
+module.exports = {
+theme: {
+screens: {
+'tablet': '640px',
+// => @media (min-width: 640px) { ... }
+
+'laptop': '1024px',
+// => @media (min-width: 1024px) { ... }
+
+'desktop': '1280px',
+// => @media (min-width: 1280px) { ... }
+},
+}
+} -->

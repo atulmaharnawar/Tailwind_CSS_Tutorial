@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Directives in Tailwind CSS</title>
+    <link rel="stylesheet" href="/apply.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="m-36">
+        <button type="button"
+            class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Purple
+            to Pink
+        </button>
+        <button type="button"
+            class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Pink
+        </button>
+        <button class=".btn">Click
+            Here
+        </button>
+    </div>
+</body>
+
+</html>
+
+<!-- @apply
+Use @apply to inline any existing utility classes into your own custom CSS.
+
+This is useful when you need to write custom CSS (like to override the styles in a third-party library) but still want
+to work with your design tokens and use the same syntax you’re used to using in your HTML.
+
+.select2-dropdown {
+@apply rounded-b-lg shadow-md;
+}
+.select2-search {
+@apply border border-gray-300 rounded;
+}
+.select2-results__group {
+@apply text-lg font-bold text-gray-900;
+} -->
